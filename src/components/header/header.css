@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 12px;
+    position: relative;
+    align-items: center;
+    
+
+}
+
+.menu {
+    background-color: white;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.menu-icon {
+    font-size: 24px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.web-menu {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    font-size: 24px;
+    color: blue;
+    font-weight: 800;
+    align-items: center;
+}
+.logo img {
+    width: 68px;
+    border: 2px gray solid;
+    border-radius: 100%;
+    margin-right: 6px;
+    
+}
+
+
+@media only screen and (max-width: 720px) {
+    .mobile-menu {
+        display: flex;
+    }
+    .web-menu {
+        display: none;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+}
+
+
